@@ -1,0 +1,174 @@
+@import url('https://fonts.googleapis.com/css2?family=Sniglet&display=swap');
+body {
+  font-family: 'Sniglet', cursive;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  flex-direction: column;
+}
+/* body background class */
+.bg-body{
+  background: linear-gradient(to right, #7f50e4 0%, #4c05d0);
+}
+
+h1 {
+  color: #fff;
+  letter-spacing: 5px;
+  text-transform: uppercase;
+  text-shadow: 4px 3px 6px rgba(0, 0, 0, 1);
+}
+
+.search {
+  position: relative;
+}
+
+.searchInput {
+  font-family: inherit;
+  background-color: transparent;
+  border: none;
+  font-size: 16px;
+  padding: 15px;
+  height: 10px;
+  width: 15px;
+  border-radius: 10px;
+  transition: width 0.3s ease;
+}
+
+.searchInput,
+.searchBtn:focus {
+  outline: none;
+}
+
+.searchBtn {
+  background-color: #264653;
+  border: none;
+  color: #fff;
+  font-size: 33px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: transform 0.3s ease;
+}
+
+.search.active .searchInput {
+  width: 200px;
+  background-color: #fff;
+}
+
+.search.active .searchBtn {
+  transform: translateX(198px);
+  background-color: #fff;
+  color: tomato;
+}
+
+.poke-container {
+  margin-top: 20px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  max-width: 85%;
+}
+
+.pokemon {
+  margin: 10px;
+  padding: 20px;
+  box-shadow: rgba(0, 0, 0, 0.17) 0px -23px 25px 0px inset,
+    rgba(0, 0, 0, 0.15) 0px -36px 30px 0px inset,
+    rgba(0, 0, 0, 0.1) 0px -79px 40px 0px inset, rgba(0, 0, 0, 0.06) 0px 2px 1px,
+    rgba(0, 0, 0, 0.09) 0px 4px 2px, rgba(0, 0, 0, 0.09) 0px 8px 4px,
+    rgba(0, 0, 0, 0.09) 0px 16px 8px, rgba(0, 0, 0, 0.09) 0px 32px 16px;
+  color: #fefefe;
+  border-radius: 10px;
+}
+
+.image-container {
+  background-color: rgba(0, 0, 0, 0.5);
+  border-radius: 50%;
+}
+
+.image-container img {
+  width: 180px;
+  opacity: 0.70;
+  transition: all 0.3s ease;
+}
+
+.pokemon:hover .image-container img {
+  opacity: 1;
+  transform: scale(1.15);
+}
+
+.poke-info {
+  margin-top: 20px;
+}
+
+.poke-id {
+  background-color: rgba(0, 0, 0, 0.3);
+  border-radius: 3rem;
+  padding: 5px 10px;
+  font-size: 1rem;
+}
+.poke-name {
+  letter-spacing: 2px;
+  margin: 15px 0 10px;
+  text-transform: capitalize;
+}
+.info span {
+  padding: 10px 10px;
+}
+.poke-type {
+  margin-top: 10px;
+}
+
+
+
+/* custom personal class */
+/* class for the button container */
+.bottoni-gen-div{
+  margin-top: 1rem;
+}
+/* class for each button of the various gen */
+.button-gen{
+  padding: 10px 20px;
+  border-radius: 10px;
+  font-family: 'Sniglet', cursive;
+}
+/* class for the background of the first gen */
+.first-gen{
+  background:linear-gradient(to right, #FF6680, #FF173D);
+}
+/* class for the background of the second gen */
+.second-gen{
+  background: linear-gradient(to right, #FFB287, #FF6600);
+}
+/* class for the background of the third gen */
+.third-gen{
+  background: linear-gradient(to right, #FFFF7D, #FFCE1C);
+}
+/* class for the background of the fourth gen */
+.fourth-gen{
+  background: linear-gradient(to right, #DEFF70, #9ECF17);
+}
+/* class for the background of the fifth gen */
+.fifth-gen{
+  background: linear-gradient(to right, #66FF36, #00C200);
+}
+/* class for the background of the sixth gen */
+.sixth-gen{
+  background: linear-gradient(to right, #A1FFE1, #1FE0B4);
+}
+/* class for the background of the seventh gen  */
+.seventh-gen{
+  background: linear-gradient(to right, #73DCFF, #00A2FF);
+}
+/* class for the background of the eighth gen  */
+.eighth-gen{
+  background:linear-gradient(to right, #FF85F7, #FF3DF0);
+}
+/* class for the background of the ninth gen */
+.ninth-gen{
+  background: linear-gradient(to right, #D1D1D1, #A8A8A8);
+}

@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pokédex</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer"/>
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" type="image/x-icon" href="img/Poke_Ball_icon.png">
+</head>
+<body class="bg-body">
+    <h1>Pokedex guide</h1>
+    <div class="search active">
+        <input type="text" class="searchInput">
+        <button class="searchBtn"><i class="fa-solid fa-binoculars"></i></button>
+    </div>
+    <p>Type the name of the pokémon you want to search, after clicking the region button.</p>
+    <!-- buttons for each pokemon gen-->
+    <div class="bottoni-gen-div">
+        <button type="button" class="first-gen button-gen"   id="1">Kanto</button>
+        <button type="button" class="second-gen button-gen"  id="2">Johto</button>
+        <button type="button" class="third-gen button-gen"   id="3">Hoenn</button>
+        <button type="button" class="fourth-gen button-gen"  id="4">Sinnoh</button>
+        <button type="button" class="fifth-gen button-gen"   id="5">Unima</button>
+        <button type="button" class="sixth-gen button-gen"   id="6">Kalos</button>
+        <button type="button" class="seventh-gen button-gen" id="7">Alola</button>
+        <button type="button" class="eighth-gen button-gen"  id="8">Galar</button>
+        <button type="button" class="ninth-gen button-gen"   id="9">Paldea</button>
+    </div>
+    <p>Click a region name to see the Pokemons added in that generation.</p>
+    <div class="poke-container">
+        <!-- content here -->
+    </div> 
+    <script src="app.js"></script>
+</body>
+</html>
